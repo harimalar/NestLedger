@@ -1,0 +1,19 @@
+"""Build small accessible policy pages without third-party dependencies."""
+from pathlib import Path
+import html, re
+ROOT = Path(__file__).resolve().parent
+CSS = '''body{margin:0;background:#121412;color:#e5e8e1;font:17px/1.65 system-ui,-apple-system,sans-serif}main{max-width:760px;margin:auto;padding:40px 24px 72px}h1{font-size:2.2rem;line-height:1.2}h2{font-size:1.25rem;margin-top:2rem}a{color:#b1c5a6;text-underline-offset:3px}nav{display:flex;gap:20px;flex-wrap:wrap}footer{margin-top:40px;border-top:1px solid #3c433b;padding-top:20px;font-size:.9rem} @media(prefers-color-scheme:light){body{background:#f6f6f0;color:#242b23}a{color:#36543c}}'''
+def inline(text):
+    value = html.escape(text)
+    return re.sub(r'\[([^\]]+)\]\((https://[^ )]+|mailto:[^ )]+)\)', r'<a href="\2">\1</a>', value)
+def page(title, body):
+    return f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="NestLedger support, privacy and personal ledger information"><title>{html.escape(title)} · NestLedger</title><style>{CSS}</style></head><body><main><nav aria-label="Main"><a href="./">Support</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></nav>{body}<footer>© 2026 Malar Hari · <a href="mailto:rajhari@gmail.com">Contact support</a></footer></main></body></html>\n'
+for stem in ['privacy-policy','terms']:
+    blocks=[]
+    for p in (ROOT/f'{stem}.md').read_text().strip().split('\n\n'):
+        if p.startswith('## '): blocks.append(f'<h2>{inline(p[3:])}</h2>')
+        elif p.startswith('# '): blocks.append(f'<h1>{inline(p[2:])}</h1>')
+        else: blocks.append(f'<p>{inline(p)}</p>')
+    (ROOT/f'{stem}.html').write_text(page('Privacy Policy' if stem=='privacy-policy' else 'Terms & Conditions','\n'.join(blocks)))
+body='''<h1>A calmer daily ledger.</h1><p>NestLedger helps you record income and expenses, plan your month and understand spending on iPhone and iPad.</p><h2>What’s in version 1.1</h2><p>Three focused tabs — Ledger, Plan and Insights. Quick category entry, remembered notes, local receipts with text recognition, upcoming bills, savings goals, monthly history and Home Screen widgets.</p><p>No account, advertising or tracking SDKs. Version 1.1 removes the Pro purchase requirement and transaction limit. Your active ledger is stored locally; automatic iCloud sync is not included.</p><h2>Keep a backup</h2><p>Open Settings → Preferences &amp; data → Backup &amp; Export to save a JSON backup. CSV and PDF are useful for sharing or reports. Exported files are not encrypted by NestLedger: save them somewhere trusted. Importing a JSON backup replaces the active ledger.</p><h2>Planning estimates</h2><p>Safe to spend and daily pacing use your entries and configured budget. They are estimates, not bank balances or financial advice. Recording a bill payment does not send money to a biller. Always review receipt recognition suggestions.</p><h2>Need help?</h2><p>Email <a href="mailto:rajhari@gmail.com">rajhari@gmail.com</a> with your app version, device model, iOS version and the steps that caused the problem. Please avoid sending sensitive receipts or full ledger backups.</p><h2>Manage your information</h2><p>Edit or delete entries in the app. Settings → Preferences &amp; data includes archive and reset controls. Remove exported and archived copies separately. Read the <a href="privacy-policy.html">Privacy Policy</a> for details and the <a href="terms.html">Terms &amp; Conditions</a> for usage information.</p>'''
+(ROOT/'index.html').write_text(page('Support',body))

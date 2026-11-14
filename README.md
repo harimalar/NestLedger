@@ -1,52 +1,28 @@
 # NestLedger
 
-**Private. Secure. No Ads. Ever.**
+A calm, local personal ledger for iPhone and iPad. This repository hosts the public support site, privacy policy and terms; it does not contain the application source code.
 
-NestLedger is a privacy-first personal finance app for families and individuals who want full control of their financial life — with no subscriptions, no tracking, and no ads.
+## Version 1.1
 
----
+- **Ledger:** fast expense and income entry, remembered notes, category shortcuts, receipts, search and month history.
+- **Plan:** monthly budget and daily safe-to-spend estimates, category limits, upcoming bills and savings goals.
+- **Insights:** spending trends, category breakdowns and month comparisons.
+- **Receipts:** camera, photo selection and document scanning, with optional on-device text recognition for review.
+- **Your preferences:** light/dark appearance, currency, custom categories, Hide Amounts and optional device authentication.
+- **Widget:** a small or medium budget summary with a shortcut to add an expense.
+- **Backups:** local JSON backup/restore, CSV export, PDF reports and year archives.
 
-## 📄 Legal
+Version 1.1 removes the transaction limit and Pro purchase requirement. It has no advertising or tracking SDKs. Automatic iCloud sync is not included. Exported files are not encrypted by the app; protect and back them up appropriately. Safe-to-spend values are planning estimates, not bank balances or financial advice.
 
-- [Privacy Policy](./privacy-policy.md)
-- [Terms & Conditions](./terms.md)
+## Support and policies
 
----
+- [Support website](https://harimalar.github.io/NestLedger/)
+- [Privacy Policy](https://harimalar.github.io/NestLedger/privacy-policy.html)
+- [Terms & Conditions](https://harimalar.github.io/NestLedger/terms.html)
+- Email: [rajhari@gmail.com](mailto:rajhari@gmail.com)
 
-## 🔑 Key Features
+For help, include your app version, device model, iOS version and steps to reproduce the issue. Do not attach a financial backup or sensitive receipt unless needed and intentionally shared.
 
-- 📊 Track expenses and income with smart category suggestions
-- 🔁 Recurring bills and smart reminders
-- 🎯 Savings goals with auto-sweep
-- 📈 Insights, trends, and cash flow analytics *(Pro)*
-- 📤 Export to PDF, CSV, or JSON backup *(Pro)*
-- 🎨 Custom themes and color accents *(Pro)*
-- 🔒 100% local storage — no cloud, no account required
+The Markdown policies are the source for the matching HTML pages and the app's bundled offline policies. Run `python3 build_site.py` after changing them. No analytics scripts, remote fonts or advertising assets are included.
 
----
-
-## 💳 NestLedger Pro
-
-Unlock everything once. No subscription. No recurring charges.
-
-**One-time purchase** — yours forever.
-
----
-
-## 🛡️ Privacy
-
-NestLedger is crafted by an indie developer with a clear mission:
-
-> *High-quality apps with no ads, no trackers, and full local security. Your data stays on your device — always.*
-
-All data is stored locally using SwiftData. Nothing is transmitted to external servers.
-
----
-
-## 📬 Support
-
-Questions or feedback? Reach out at **rajhari@gmail.com**
-
----
-
-*© 2025 Malar Hari. All rights reserved.*
+© 2026 Malar Hari.

@@ -1,66 +1,35 @@
-# Terms & Conditions
+# NestLedger Terms & Conditions
 
-**NestLedger**
-Last updated: March 8, 2025
+Effective November 13, 2026. These terms describe NestLedger version 1.1. Developer and support contact: Malar Hari, [rajhari@gmail.com](mailto:rajhari@gmail.com).
 
----
+## License and applicable rights
 
-## 1. Acceptance of Terms
+NestLedger is licensed under [Apple's Standard Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/), as applicable to the App Store download. These app-specific terms describe the service and do not replace that license or override mandatory consumer protections. If there is a conflict, the applicable Apple license and mandatory law control.
 
-By downloading or using NestLedger ("the App"), you agree to these Terms & Conditions. If you do not agree, please do not use the App.
+## Personal recordkeeping, not a financial service
 
----
+NestLedger helps you record and organize your own information. It is not a bank, payment service, investment adviser, tax adviser or professional accounting service. It does not access bank balances, move money, pay bills, execute investments or submit tax returns. Marking a bill paid, creating a repeat, or allocating savings changes records in the app only. You remain responsible for making actual payments and verifying your records.
 
-## 2. License
+## Estimates and accuracy
 
-NestLedger grants you a limited, non-exclusive, non-transferable license to use the App on your personal Apple devices in accordance with these terms and Apple's App Store terms of service.
+Safe to spend, daily pacing, trends and savings projections are estimates based on the entries, budgets, dates and settings you provide. They may omit obligations or transactions you have not entered and are not a guarantee that spending is affordable. Recurring entries may be generated when you open the app; reminders depend on iOS permissions and scheduling. Receipt text recognition and category suggestions can be wrong and must be checked before saving. A currency setting changes display and does not convert historical amounts using exchange rates.
 
----
+## Storage and backups
 
-## 3. NestLedger Pro — In-App Purchase
+Version 1.1 stores the active ledger locally and has no automatic cross-device sync. You are responsible for keeping independent backups before replacing a device, deleting the app, importing a backup or resetting data. Import replaces the active ledger; it is not a merge. JSON backups and archives include sensitive data and are not encrypted by the app. App Lock does not protect exported files. See the [Privacy Policy](https://harimalar.github.io/NestLedger/privacy-policy.html) for storage, support and deletion details.
 
-NestLedger offers a one-time, non-consumable in-app purchase ("NestLedger Pro") that unlocks all Pro features permanently.
+## Purchases and earlier versions
 
-- **No subscription** — purchase once, own forever
-- **No refunds** except as required by Apple's standard refund policy
-- **Restore Purchases** is supported — use the "Restore Purchases" button in the app to restore your purchase on a new device
+Version 1.1 has no in-app purchase or subscription requirement and no transaction-count paywall. Earlier versions offered a one-time Pro purchase. Existing purchasers can use the features available in version 1.1 without purchasing again. These terms do not remove any statutory rights relating to earlier purchases. Apple handles App Store purchase billing and refund requests under its policies and applicable law; see [Apple's refund guidance](https://support.apple.com/118223).
 
----
+## Your content and permitted use
 
-## 4. User Data & Privacy
+You retain your rights in the notes, receipts and other content you enter. Only add content you are entitled to use, and respect other people's privacy. The app and its original materials remain subject to their applicable intellectual property rights. No ownership of your ledger is transferred to the developer.
 
-All user data remains on your device. We do not collect, store, or transmit any personal information. See our [Privacy Policy](./privacy-policy.md) for full details.
+## Availability and limitations
 
----
+We aim to maintain a reliable app, but uninterrupted operation, perfect recognition, compatibility with every future device, or recovery of lost local data cannot be guaranteed. To the extent permitted by law, the app is provided as available, and liability for indirect or consequential loss is limited under the applicable Apple license and law. Nothing here excludes liability or warranties that cannot legally be excluded, including mandatory consumer remedies. Seek qualified advice for financial, tax or legal decisions.
 
-## 5. Disclaimer of Warranties
+## Changes, disputes and support
 
-NestLedger is provided "as is" without warranty of any kind. The App is intended for personal financial tracking purposes only and does not constitute financial, tax, or investment advice.
-
----
-
-## 6. Limitation of Liability
-
-To the maximum extent permitted by law, Malar Hari shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.
-
----
-
-## 7. Changes to Terms
-
-We reserve the right to modify these Terms at any time. Continued use of the App after any changes constitutes your acceptance of the new Terms.
-
----
-
-## 8. Governing Law
-
-These Terms are governed by the laws of the State of California, United States, without regard to conflict of law provisions.
-
----
-
-## Contact
-
-Questions? Reach us at **rajhari@gmail.com**
-
----
-
-*© 2025 Malar Hari. All rights reserved.*
+Features and these terms may change in later releases. Material changes will be communicated in release information or the app, and consent obtained where required. California law applies to these app-specific terms to the extent permitted by the Apple license, without depriving consumers of mandatory protections or courts available under the laws of their place of residence. Contact support for questions, complaints, privacy requests or help with the app.
