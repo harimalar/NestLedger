@@ -1,6 +1,6 @@
 # NestLedger Terms & Conditions
 
-Effective November 13, 2026. These terms describe NestLedger version 1.1. Developer and support contact: Malar Hari, [rajhari@gmail.com](mailto:rajhari@gmail.com).
+Effective November 15, 2026. These terms describe NestLedger version 1.1. Developer and support contact: Malar Hari, [rajhari@gmail.com](mailto:rajhari@gmail.com).
 
 ## License and applicable rights
 
@@ -16,7 +16,7 @@ Safe to spend, daily pacing, trends and savings projections are estimates based 
 
 ## Storage and backups
 
-Version 1.1 stores the active ledger locally and has no automatic cross-device sync. You are responsible for keeping independent backups before replacing a device, deleting the app, importing a backup or resetting data. Import replaces the active ledger; it is not a merge. JSON backups and archives include sensitive data and are not encrypted by the app. App Lock does not protect exported files. See the [Privacy Policy](https://harimalar.github.io/NestLedger/privacy-policy.html) for storage, support and deletion details.
+The active ledger is stored locally. Build 26 adds optional iCloud Drive backup and explicit restore; it does not merge live ledgers between devices. Earlier builds do not include automatic iCloud backup. Background timing depends on iOS and connectivity; a 9 PM notification does not guarantee a completed upload. Verify the last uploaded status. Deleting the app removes local backups; completed iCloud copies remain in your Apple Account until removed separately. You are responsible for keeping independent backups before replacing a device, deleting the app, importing a backup or resetting data. Import replaces the active ledger; it is not a merge. JSON backups and archives include sensitive data and are not encrypted by the app. App Lock does not protect exported files. See the [Privacy Policy](https://harimalar.github.io/NestLedger/privacy-policy.html) for storage, support and deletion details.
 
 ## Purchases and earlier versions
 

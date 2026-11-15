@@ -1,6 +1,6 @@
 # NestLedger Privacy Policy
 
-Effective November 13, 2026. This policy describes NestLedger version 1.1 and later versions that link to it. Developer and support contact: Malar Hari, [rajhari@gmail.com](mailto:rajhari@gmail.com).
+Effective November 15, 2026. This policy describes NestLedger version 1.1 and later versions that link to it. Developer and support contact: Malar Hari, [rajhari@gmail.com](mailto:rajhari@gmail.com).
 
 ## Your ledger stays under your control
 
@@ -8,9 +8,9 @@ NestLedger is a personal expense and income tracker. It requires no account and 
 
 ## Local storage, backups and sharing
 
-Version 1.1 does not provide automatic iCloud sync between devices. Apple's device backup services may include app data according to your device settings. You can also choose to save or share a backup through Files, iCloud Drive, email or another provider using the system share sheet. Those services handle the files under their own privacy terms.
+Build 26 adds optional automatic backups to your own iCloud Drive using Apple’s document storage. Enabling Save to iCloud uploads copies of your entries, notes, receipts, budgets, bills and goals to the Apple Account signed in on your device. The developer does not receive these files. This is backup and explicit restore, not live merging between devices. Earlier builds do not include automatic iCloud backup. Apple's device backup services may separately include app data according to your device settings. You can also choose to save or share a backup through Files, iCloud Drive, email or another provider using the system share sheet. Those services handle the files under their own privacy terms.
 
-JSON backups and archives can contain your complete ledger, including notes and receipts. CSV and PDF exports contain the information shown in the export. These files are not password protected or encrypted by NestLedger. Keep them in a trusted location and share them only with intended recipients. App Lock does not protect copies exported outside the app. The app also keeps local backup and archive files until you remove them; resetting the active ledger does not remove those separate files.
+JSON backups and archives can contain your complete ledger, including notes and receipts. CSV and PDF exports contain the information shown in the export. These files are not password protected or encrypted by NestLedger. Keep them in a trusted location and share them only with intended recipients. App Lock does not protect copies exported outside the app. The app keeps local backup and archive files until you remove them; deleting the app removes those local copies. Uploaded iCloud copies survive app deletion and remain until you remove them in Files. Turning backup off or resetting the active ledger does not remove existing separate copies. Restore explicitly replaces your active ledger and first saves a local recovery copy. Automatic backups update a daily file for each installation; prior days and other installations are kept separately. iOS controls background scheduling, so a requested 9 PM backup is not guaranteed to execute at that exact time. Check the last confirmed upload status before deleting the app.
 
 ## Camera, photos and receipt text
 
@@ -22,7 +22,7 @@ Optional App Lock uses Apple's LocalAuthentication framework with the authentica
 
 If you add a widget, a small budget summary is shared locally with the NestLedger widget extension. Notes and receipts are not included. The widget hides financial figures when App Lock or Hide Amounts is enabled, although system-rendered previews may take time to refresh. Remove the widget if you do not want a summary visible on your Home Screen.
 
-Optional reminders are scheduled locally through iOS. Notification previews may show a bill name and amount. Control notification permissions and previews in iOS Settings. No push-notification server is used.
+Optional reminders are scheduled locally through iOS. Notification previews may show a bill name and amount. Control notification permissions and previews in iOS Settings. Daily backup check-ins and completed-upload notifications contain no financial amounts or notes. A scheduled check-in is not proof that a backup completed; upload confirmation is shown separately. No push-notification server is used.
 
 ## Support and diagnostics
 

@@ -10,9 +10,15 @@ A calm, local personal ledger for iPhone and iPad. This repository hosts the pub
 - **Receipts:** camera, photo selection and document scanning, with optional on-device text recognition for review.
 - **Your preferences:** light/dark appearance, currency, custom categories, Hide Amounts and optional device authentication.
 - **Widget:** a small or medium budget summary with a shortcut to add an expense.
-- **Backups:** local JSON backup/restore, CSV export, PDF reports and year archives.
+- **Backups:** local JSON backup/restore, CSV export, PDF reports and year archives. Build 26 adds optional iCloud Drive backup and explicit restore.
 
 Version 1.1 removes the transaction limit and Pro purchase requirement. It has no advertising or tracking SDKs. Automatic iCloud sync is not included. Exported files are not encrypted by the app; protect and back them up appropriately. Safe-to-spend values are planning estimates, not bank balances or financial advice.
+
+## Automatic backup update — build 26
+
+Automatic iCloud backup is available starting with version 1.1 build 26. Earlier builds do not include this feature. In build 26, Settings → iCloud & backup enables automatic daily copies, iCloud Drive storage and an optional 9 PM local notification. Backups also update after changes and on opening the app. iOS controls background execution, so exact 9 PM backup completion is not guaranteed. Only confirmed uploads are marked as uploaded.
+
+Uploaded copies can be found after reinstalling with the same Apple Account. Choose Restore from iCloud during setup or Find iCloud backups in Settings. Restore explicitly replaces the active ledger and preserves a local recovery copy first. Daily cloud copies remain until removed in Files; this is backup, not live multi-device sync. Builds through 25 require manual JSON export to preserve an independent copy before deleting the app. Deleting the app removes all local backups.
 
 ## Support and policies
 
